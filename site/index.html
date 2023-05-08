@@ -9,5 +9,21 @@
 <h1>Testing Page For the course</h1>
 <p>Started at 8'th of May</p>
 <p>I'm Osama and this is my first time (not really) learning web dev. skills to just learn it because wara because</p>
+<script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.1'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script>
 </body>
 </html>
