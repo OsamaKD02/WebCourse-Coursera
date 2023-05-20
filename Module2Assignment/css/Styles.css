@@ -2,12 +2,23 @@ body {
 	background-color: #D1D0CE;
 	text-align: center;	
 	margin: 0px;
+  font-family: Fantasy;
+  cursor: default;
 }
-section div.box p {
+section div.box .container {
 	height: 200px;
-	box-sizing: content-box;
-	margin-left: 5%;
+	box-sizing: border-box;
 	width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+section#head {
+  font-size: 30px;
+  transition: 0.4s;
 }
 
 section#content{
@@ -21,30 +32,62 @@ section#head {
 	padding: 80px;
 }
 
-section div p { /*box headers*/
+section div.container div.header { /*box headers*/
 	width: 35%;
-	height: 30px;
+	height: 25px;
 	float: right;
-	right: 0px;
-	border: 2px solid black;
-	background-color: white;
+	border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-#box1 p {
-	background-color: red;
+
+.box div.container {
+	background-color: #808080;
+  overflow: hidden;
 }
 
-#box2 p {
- 	background-color: blue;
+.container .text {
+  text-align: left;
+  padding: 35px 20px 20px 20px;
 }
 
-#box3 p {
-	background-color: green;
+#header1 {
+ background-color: #3090C7;
 }
+
+#header2 {
+  background-color: #29465B;
+  color: white;
+  transition: 0.3s;
+}
+
+#header3 {
+  background-color: #566D7E;
+  color: white;
+  transition: 0.3s;
+}
+
+#header1:hover ,#header2:hover ,#header3:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+section div.box .container:hover{
+  height: 300px;
+}
+
+section#head:hover{
+  padding:75px;
+  font-size:35px;
+}
+
 @media (min-width: 992px) {
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -56,7 +99,7 @@ section div p { /*box headers*/
     width: 25%;
   }
   .col-lg-4 {
-    width: 33.33%;
+    width: 33.3%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -87,7 +130,11 @@ section div p { /*box headers*/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid red;
+  }
+  section div.box#box3 div.container{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 40px;
   }
   .col-md-1 {
     width: 8.33%;
@@ -130,7 +177,6 @@ section div p { /*box headers*/
 @media (max-width: 767px){
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;	
-    border: 1px solid yellow;
   }
   .col-sm-12 {
   	width: 100%;
