@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Osama's Personal Page</title>
+  <style>
+    
+    body {
+      background-color: #A9A9A9;
+      align-items: center;
+      cursor: default;
+    }
+
+    section {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      margin-left: 10%;
+      top: 70px;
+      width: 80%;
+      border: none;
+      text-align: center;
+      flex-flow: wrap;
+    }
+
+    section div#text  {
+      border: none;
+      box-shadow: 2px 2px 5px black;
+      box-sizing: border-box;
+      color : white;
+      font-size: 18px;
+      width: 100%;
+      height: 150px;
+      padding: 15px;
+      background-color: #191970;
+      text-align: center;
+      border-radius: 20px;
+      transition: 0.4s;
+      overflow: hidden;
+      z-index: 1;
+      position: absolute;
+    }
+
+    section div#text:hover{
+      height: 250px;
+    }
+
+
+    h1 {
+      color: black;
+      text-align: center;
+      transition: 0.4s;
+      width: 100%;
+      position: absolute;
+      margin: 10px;
+    }
+
+    h1:hover{
+      font-size: 36px;
+    }
+
+    #name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    #buttons #Bgroup #button:hover{
+      padding: 14px;
+      margin: 26px;
+    }
+
+
+    #buttons div #button , #box{
+      margin: 30px;
+      background-color: #191970;
+      padding: 10px ;
+      color: white;
+      border-radius: 7px;
+      position: relative;
+      display: inline;
+      border: 2px solid black;    
+    }
+
+    section #buttons {
+      position: relative;
+      top: 170px;
+      width: 100%;
+      text-align: center;
+      border: 2px solid black;
+    }
+
+    #buttons #Bgroup {
+      margin: 30px 0px 30px 0px;
+    }
+
+    section #buttons #Bgroup #button {
+      transition: 0.3s;
+    }
+
+    #name:hover {
+      font-size: 26px;
+      color: red;
+    }
+    #name {
+      transition: 0.3s;
+    }
+
+    section #buttons div #box {
+      box-sizing: border-box;
+      color: white;
+      background-color: #191970;
+      padding: 10px 20px 10px 20px;
+      font-family: Sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      width: 100%;
+      border: 10px solid #98AFC7;
+      text-align: center;
+      position: relative;
+      top: 8px;
+    }
+
+    #buttons #box:hover{
+      color: #191970;
+      background-color: white;
+      border-color: red;
+      transition: 0.4s;
+    }
+
+    #image {
+      width: 100px;
+      position: relative;
+      left: 700px;
+      bottom: 150px;
+      transition: 0.3s;
+      border: 5px solid black;
+    }
+
+    #image:hover {
+      transform: scale(1.2);
+    }
+
+    #image2 {
+      position: relative;
+      width: 100px;
+      left: 700px;
+      bottom: 100px;
+      transition: 0.5s;
+    }
+
+    #image2:hover{
+      left: 650px;
+    }
+
+
+  </style>
+
+</head>
+<body>
+<h1>Testing Page For the course !</h1>
+
+<section>
+a
+  <div id="text"><p>Started at 8'th of May <br> I'm <span id="name">Osama</span> and this is my first time (not really) learning web dev. skills to just learn it because wara because.<br> I'm writing this to rill this box it overflows out side it's box range.<br>The last sentence was not enough so I'm adding this sentence too.<br>This line should not be visible when the mouse is not on the box, if you want to read it you have to get your pointer on top of the box.</p></div>
+
+<div id="buttons">
+  <div id="Bgroup"> 
+  <div id="button">Div 1</div>
+  <div id="button">Div 2</div>
+  <div id="button">Div 3</div>
+  </div>
+
+  <div id="Bgroup">
+  <div id="button">Div 4</div>
+  <div id="button">Div 5</div>
+  <div id="button">Div 6</div>
+  </div>
+
+  <div id="Bgroup">
+    <div></div>
+    <div id="box">Test</div>
+    <div></div>
+  </div>
+  
+</div>
+
+<div id="image"><img src="yaman.jpg" alt="Yaman" width="100px"></div>
+
+<div id="image2"><img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" alt="yaman2" width="100px"></div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<script id="__bs_script__">//<![CDATA[
+  (function() {
+    try {
+      var script = document.createElement('script');
+      if ('async') {
+        script.async = true;
+      }
+      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.1'.replace("HOST", location.hostname);
+      if (document.body) {
+        document.body.appendChild(script);
+      }
+    } catch (e) {
+      console.error("Browsersync: could not append script tag", e);
+    }
+  })()
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.row {
+	background-color: gray;
+	text-align: center;
+}
+
+body {
+	background-color: #D1D0CE;
+}
+
+.col-md-4 {
+	height: 200px;
+}
