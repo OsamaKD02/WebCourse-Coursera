@@ -1,12 +1,53 @@
 .row {
-	background-color: gray;
 	text-align: center;
+	height: 200px;
+}
+
+.row h {
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 70px;
 }
 
 body {
 	background-color: #D1D0CE;
 }
 
-.col-md-4 {
-	height: 200px;
+div div div {
+	height: 200px ;
+}
+
+div p {
+	background-color: white;
+	width: 90%;
+	margin-left: 5%;
+	height: 100%;
+	border: 2px solid blue;
+}
+
+			/* Large screen */
+
+@media (min-width:992px) {
+	.
+}
+
+			/* Medium screen */
+
+@media (min-width:768px) and (max-width:991px){
+	.col-md-12 {
+		margin-top: 40px;
+	}
+
+	.col-md-12 p {
+		width: 95%;	
+		margin-left: 2.5%;
+	}
+}
+
+			/* Small screen */
+
+@media (max-width:767.9px) {
+	.col-sm-12 {
+		margin-top: 20px;
+	}
 }
