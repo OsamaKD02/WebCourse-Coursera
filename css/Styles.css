@@ -46,4 +46,7 @@ button {
 	#navbarNav {
 		visibility: hidden;
 	}
+	button {
+		aria-expanded="false"
+	}
 }
