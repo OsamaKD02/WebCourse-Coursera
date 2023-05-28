@@ -1,25 +1,36 @@
 body {
 	background-color: #CED6F0;
 	font-family: Bebas Neue;
+
 }
 
 .navbar {
-
-	padding: 10px;
-	background-color: #7789C6;
-	font-size: 45px;
-	font-weight: 700;
+	background-color: #7789C6;	
 	border-bottom: 2px solid black;
+}
+
+.navbar .navbar-brand {
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px;
+	color: #212529;
+}
+
+#navbarNav ul {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .row h1 {
 	margin: 20px;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 1.8em;
 }
 
-.container-fluid p {
+.row p {
 	width: 80%;
+	border: 2px solid ;
 	background-color: #7789C6;
 	border-radius: 10px;
 	padding: 20px;
@@ -27,6 +38,8 @@ body {
 	margin-right: auto;
 }
 
-.icon-bar {
-	margin-bottom: 3px;
+@media (min-width:576px) {
+	#navbarNav {
+		visibility: hidden;
+	}
 }
