@@ -28,11 +28,10 @@ button {
 
 .row h1 {
 	margin: 20px;
-	text-align: center;
 	font-size: 1.8em;
 }
 
-.row p {
+.col-lg-12 p,.col-md-12 p,.col-sm-12 p {
 	width: 80%;
 	border: 2px solid ;
 	background-color: #7789C6;
