@@ -83,7 +83,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  [...], // ***** <---- TODO: STEP 1: Substitute [...] ******
+  function(response) {
+    // Process the JSON response
+    var categories = JSON.parse(response);
+    // Rest of your code using the `categories` object
+  },
+  { dataType: 'json' }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
@@ -341,3 +346,19 @@ function insertItemPortionName(html,
 global.$dc = dc;
 
 })(window);
+
+$(document).ready(function() {
+  var mainContent = $('#main-content');
+
+  $.ajax({
+    url: 'home-snippet.html',
+    dataType: 'html',
+    success: function(data) {
+      mainContent.html(data);
+    },
+    error: function() {
+      console.error('Error loading home-snippet.html');
+    }
+  });
+});
+
